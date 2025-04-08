@@ -36,6 +36,17 @@ class LoginViewController: UIViewController {
         textField.layer.cornerRadius = 3
         return textField
     }()
+    
+    var loginButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 20, y: 422, width: 335, height: 57))
+        button.backgroundColor = UIColor(red: 255/255, green: 111/255, blue: 15/255, alpha: 1)
+        button.setTitle("로그인하기", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        button.addTarget(self, action: #selector(loginButtonDidTapped), for: .touchUpInside)
+        button.layer.cornerRadius = 6
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +55,11 @@ class LoginViewController: UIViewController {
         self.view.addSubview(titleLabel)
         self.view.addSubview(idTextField)
         self.view.addSubview(passwordTextField)
+        self.view.addSubview(loginButton)
+    }
+    
+    @objc func loginButtonDidTapped() {
+        print("로그인 버튼 터치")
     }
 
 }
