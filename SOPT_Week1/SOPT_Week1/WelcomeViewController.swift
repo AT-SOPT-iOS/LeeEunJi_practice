@@ -10,6 +10,12 @@ import UIKit
 class WelcomeViewController: UIViewController {
     var id: String? = ""
     
+    let puppyImageView: UIImageView = {
+        let imageView = UIImageView(frame: CGRect(x: 112, y: 87, width: 150, height: 150))
+        imageView.image = UIImage(named: "Icon")
+        return imageView
+    }()
+    
     let welcomeLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 140, y: 295, width: 95, height: 60))
         label.text = "???님\n반가워요!"
@@ -24,6 +30,8 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = .white
+        
+        self.view.addSubview(puppyImageView)
         self.view.addSubview(welcomeLabel)
     }
 
