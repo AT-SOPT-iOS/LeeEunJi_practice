@@ -6,30 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D834E3432DA4F70E006DBC8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E3392DA4F70E006DBC8B /* AppDelegate.swift */; };
+		D834E3442DA4F70E006DBC8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E33E2DA4F70E006DBC8B /* LoginViewController.swift */; };
+		D834E3452DA4F70E006DBC8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E33F2DA4F70E006DBC8B /* SceneDelegate.swift */; };
+		D834E3462DA4F70E006DBC8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E3402DA4F70E006DBC8B /* ViewController.swift */; };
+		D834E3472DA4F70E006DBC8B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E3412DA4F70E006DBC8B /* WelcomeViewController.swift */; };
+		D834E3482DA4F70E006DBC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D834E33A2DA4F70E006DBC8B /* Assets.xcassets */; };
+		D834E34A2DA4F70E006DBC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D834704F2DA4EA8800F5A4D9 /* SOPT_Week1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_Week1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D834E3392DA4F70E006DBC8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D834E33A2DA4F70E006DBC8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D834E33B2DA4F70E006DBC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D834E33C2DA4F70E006DBC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D834E33E2DA4F70E006DBC8B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D834E33F2DA4F70E006DBC8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D834E3402DA4F70E006DBC8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D834E3412DA4F70E006DBC8B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D83470612DA4EA8900F5A4D9 /* Exceptions for "SOPT_Week1" folder in "SOPT_Week1" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D834704E2DA4EA8800F5A4D9 /* SOPT_Week1 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D83470512DA4EA8800F5A4D9 /* SOPT_Week1 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D83470612DA4EA8900F5A4D9 /* Exceptions for "SOPT_Week1" folder in "SOPT_Week1" target */,
-			);
-			path = SOPT_Week1;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D834704C2DA4EA8800F5A4D9 /* Frameworks */ = {
@@ -45,7 +42,7 @@
 		D83470462DA4EA8800F5A4D9 = {
 			isa = PBXGroup;
 			children = (
-				D83470512DA4EA8800F5A4D9 /* SOPT_Week1 */,
+				D834E3422DA4F70E006DBC8B /* SOPT_Week1 */,
 				D83470502DA4EA8800F5A4D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +53,21 @@
 				D834704F2DA4EA8800F5A4D9 /* SOPT_Week1.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D834E3422DA4F70E006DBC8B /* SOPT_Week1 */ = {
+			isa = PBXGroup;
+			children = (
+				D834E3392DA4F70E006DBC8B /* AppDelegate.swift */,
+				D834E33F2DA4F70E006DBC8B /* SceneDelegate.swift */,
+				D834E33A2DA4F70E006DBC8B /* Assets.xcassets */,
+				D834E33B2DA4F70E006DBC8B /* Info.plist */,
+				D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */,
+				D834E33E2DA4F70E006DBC8B /* LoginViewController.swift */,
+				D834E3412DA4F70E006DBC8B /* WelcomeViewController.swift */,
+				D834E3402DA4F70E006DBC8B /* ViewController.swift */,
+			);
+			path = SOPT_Week1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +84,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D83470512DA4EA8800F5A4D9 /* SOPT_Week1 */,
 			);
 			name = SOPT_Week1;
 			packageProductDependencies = (
@@ -122,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D834E3482DA4F70E006DBC8B /* Assets.xcassets in Resources */,
+				D834E34A2DA4F70E006DBC8B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +143,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D834E3432DA4F70E006DBC8B /* AppDelegate.swift in Sources */,
+				D834E3442DA4F70E006DBC8B /* LoginViewController.swift in Sources */,
+				D834E3452DA4F70E006DBC8B /* SceneDelegate.swift in Sources */,
+				D834E3462DA4F70E006DBC8B /* ViewController.swift in Sources */,
+				D834E3472DA4F70E006DBC8B /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D834E33C2DA4F70E006DBC8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D83470632DA4EA8900F5A4D9 /* Debug */ = {

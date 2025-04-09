@@ -59,7 +59,12 @@ class LoginViewController: UIViewController {
     }
     
     @objc func loginButtonDidTapped() {
-        print("로그인 버튼 터치")
+        pushToWelcomeVC()
     }
 
+    private func pushToWelcomeVC() {
+        let welcomeViewController = WelcomeViewController()
+        welcomeViewController.id = idTextField.text
+        self.navigationController?.pushViewController(welcomeViewController, animated: true)
+    }
 }
