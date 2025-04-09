@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
     var mainButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 20, y: 426, width: 335, height: 57))
         button.backgroundColor = UIColor(red: 255/255, green: 111/255, blue: 15/255, alpha: 1)
-        button.setTitle("매인으로", for: .normal)
+        button.setTitle("메인으로", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 18)
         button.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
