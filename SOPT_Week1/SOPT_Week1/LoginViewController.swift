@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
 
     private func pushToWelcomeVC() {
         let welcomeViewController = WelcomeViewController()
-        welcomeViewController.id = idTextField.text
+        welcomeViewController.setLabelText(id: idTextField.text)
         self.navigationController?.pushViewController(welcomeViewController, animated: true)
     }
 }

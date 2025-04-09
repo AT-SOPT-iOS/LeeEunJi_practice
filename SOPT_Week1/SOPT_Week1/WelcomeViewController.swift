@@ -57,6 +57,8 @@ class WelcomeViewController: UIViewController {
         self.view.addSubview(welcomeLabel)
         self.view.addSubview(mainButton)
         self.view.addSubview(reloginButton)
+        
+        bindID()
     }
     
     @objc private func mainButtonTapped() {
@@ -70,5 +72,13 @@ class WelcomeViewController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
     }
+    
+    // FIXME: - 강제추출
+    private func bindID() {
+        self.welcomeLabel.text = "\(id!)님 \n반가워요!"
+    }
 
+    func setLabelText(id: String?) {
+        self.id = id
+    }
 }
