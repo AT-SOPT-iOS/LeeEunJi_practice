@@ -37,6 +37,17 @@ class WelcomeViewController: UIViewController {
         return button
     }()
     
+    var reloginButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 20, y: 498, width: 335, height: 57))
+        button.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
+        button.setTitle("다시 로그인", for: .normal)
+        button.setTitleColor(UIColor(red: 172/255, green: 176/255, blue: 185/255, alpha: 1), for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        button.addTarget(self, action: #selector(reloginButtonDidTapped), for: .touchUpInside)
+        button.layer.cornerRadius = 6
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,10 +56,19 @@ class WelcomeViewController: UIViewController {
         self.view.addSubview(puppyImageView)
         self.view.addSubview(welcomeLabel)
         self.view.addSubview(mainButton)
+        self.view.addSubview(reloginButton)
     }
     
     @objc private func mainButtonTapped() {
         print("메인 버튼")
+    }
+    
+    @objc private func reloginButtonDidTapped() {
+        if self.navigationController == nil {
+            self.dismiss(animated: true)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
 }
