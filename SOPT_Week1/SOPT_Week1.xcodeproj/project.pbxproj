@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8171DF72DA63E40000CD93D /* Pretendard-700.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8171DF62DA63E40000CD93D /* Pretendard-700.otf */; };
+		D8171DF92DA63E57000CD93D /* Pretendard-600.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8171DF82DA63E57000CD93D /* Pretendard-600.otf */; };
+		D8171DFB2DA63EA0000CD93D /* Pretendard-800.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8171DFA2DA63EA0000CD93D /* Pretendard-800.otf */; };
 		D834E3432DA4F70E006DBC8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E3392DA4F70E006DBC8B /* AppDelegate.swift */; };
 		D834E3442DA4F70E006DBC8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E33E2DA4F70E006DBC8B /* LoginViewController.swift */; };
 		D834E3452DA4F70E006DBC8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E33F2DA4F70E006DBC8B /* SceneDelegate.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8171DF62DA63E40000CD93D /* Pretendard-700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-700.otf"; sourceTree = "<group>"; };
+		D8171DF82DA63E57000CD93D /* Pretendard-600.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-600.otf"; sourceTree = "<group>"; };
+		D8171DFA2DA63EA0000CD93D /* Pretendard-800.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-800.otf"; sourceTree = "<group>"; };
 		D834704F2DA4EA8800F5A4D9 /* SOPT_Week1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_Week1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D834E3392DA4F70E006DBC8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D834E33A2DA4F70E006DBC8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8171DF52DA63E39000CD93D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D8171DFA2DA63EA0000CD93D /* Pretendard-800.otf */,
+				D8171DF82DA63E57000CD93D /* Pretendard-600.otf */,
+				D8171DF62DA63E40000CD93D /* Pretendard-700.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		D83470462DA4EA8800F5A4D9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +74,7 @@
 		D834E3422DA4F70E006DBC8B /* SOPT_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				D8171DF52DA63E39000CD93D /* Font */,
 				D834E3392DA4F70E006DBC8B /* AppDelegate.swift */,
 				D834E33F2DA4F70E006DBC8B /* SceneDelegate.swift */,
 				D834E33A2DA4F70E006DBC8B /* Assets.xcassets */,
@@ -132,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D834E3482DA4F70E006DBC8B /* Assets.xcassets in Resources */,
+				D8171DF72DA63E40000CD93D /* Pretendard-700.otf in Resources */,
+				D8171DFB2DA63EA0000CD93D /* Pretendard-800.otf in Resources */,
 				D834E34A2DA4F70E006DBC8B /* LaunchScreen.storyboard in Resources */,
+				D8171DF92DA63E57000CD93D /* Pretendard-600.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
