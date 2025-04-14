@@ -28,7 +28,7 @@ class WelcomeViewController: UIViewController {
     
     var mainButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 20, y: 426, width: 335, height: 57))
-        button.backgroundColor = UIColor(red: 255/255, green: 111/255, blue: 15/255, alpha: 1)
+        button.backgroundColor = UIColor(named: "PrimaryOrange")
         button.setTitle("메인으로", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 18)
@@ -39,9 +39,9 @@ class WelcomeViewController: UIViewController {
     
     var reloginButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 20, y: 498, width: 335, height: 57))
-        button.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
+        button.backgroundColor = UIColor(named: "Grey200")
         button.setTitle("다시 로그인", for: .normal)
-        button.setTitleColor(UIColor(red: 172/255, green: 176/255, blue: 185/255, alpha: 1), for: .normal)
+        button.setTitleColor(UIColor(named: "Grey400"), for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 18)
         button.addTarget(self, action: #selector(reloginButtonDidTapped), for: .touchUpInside)
         button.layer.cornerRadius = 6
