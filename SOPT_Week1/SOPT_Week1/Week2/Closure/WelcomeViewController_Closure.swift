@@ -68,6 +68,11 @@ class WelcomeViewController_Closure: UIViewController {
     }
     
     @objc private func reloginButtonDidTapped() {
+        guard let loginDataCompletion else { return }
+        if let id = id {
+            loginDataCompletion(id)
+        }
+        
         if self.navigationController == nil {
             self.dismiss(animated: true)
         } else {

@@ -63,8 +63,13 @@ class LoginViewController_Closure: UIViewController {
     }
 
     private func pushToWelcomeVC() {
-        let welcomeViewController = WelcomeViewController()
-        welcomeViewController.setLabelText(id: idTextField.text)
+        let welcomeViewController = WelcomeViewController_Closure()
+        welcomeViewController.id = idTextField.text
+        welcomeViewController.loginDataCompletion = { [weak self] data in
+            print("클로저로 받아온 id가 뭐게? ", data)
+            guard let self else { return }
+            self.idTextField.text = data
+        }
         self.navigationController?.pushViewController(welcomeViewController, animated: true)
     }
 }
