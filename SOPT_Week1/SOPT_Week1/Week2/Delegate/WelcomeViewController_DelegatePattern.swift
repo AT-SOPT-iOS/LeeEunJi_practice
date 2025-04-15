@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol DataBindDelegate: AnyObject {
+    func dataBind(id: String)
+}
+
 class WelcomeViewController_DelegatePattern: UIViewController {
     var id: String? = ""
     
