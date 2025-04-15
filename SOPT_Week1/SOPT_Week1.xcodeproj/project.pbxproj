@@ -34,6 +34,14 @@
 		D834E3412DA4F70E006DBC8B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D8FD75C82DAE820B00E9B0D7 /* Week2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Week2;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		D834704C2DA4EA8800F5A4D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -74,13 +82,14 @@
 		D834E3422DA4F70E006DBC8B /* SOPT_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				D8FD75C82DAE820B00E9B0D7 /* Week2 */,
+				D8FD75C72DAE819500E9B0D7 /* Week1 */,
 				D8171DF52DA63E39000CD93D /* Font */,
 				D834E3392DA4F70E006DBC8B /* AppDelegate.swift */,
 				D834E33F2DA4F70E006DBC8B /* SceneDelegate.swift */,
 				D834E33A2DA4F70E006DBC8B /* Assets.xcassets */,
 				D834E33B2DA4F70E006DBC8B /* Info.plist */,
 				D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */,
-				D8FD75C72DAE819500E9B0D7 /* Week1 */,
 				D834E3402DA4F70E006DBC8B /* ViewController.swift */,
 			);
 			path = SOPT_Week1;
@@ -109,6 +118,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D8FD75C82DAE820B00E9B0D7 /* Week2 */,
 			);
 			name = SOPT_Week1;
 			packageProductDependencies = (
