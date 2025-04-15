@@ -23,7 +23,7 @@ class LoginViewController_Delegate: UIViewController {
         let textField = UITextField(frame: CGRect(x: 20, y: 276, width: 335, height: 52))
         textField.placeholder = "아이디"
         textField.font = UIFont(name: "Pretendard-SemiBold", size: 14)
-        textField.backgroundColor = UIColor(named: "Grey200")
+        textField.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
         textField.layer.cornerRadius = 3
         return textField
     }()
@@ -32,14 +32,14 @@ class LoginViewController_Delegate: UIViewController {
         let textField = UITextField(frame: CGRect(x: 20, y: 335, width: 335, height: 52))
         textField.placeholder = "비밀번호"
         textField.font = UIFont(name: "Pretendard-SemiBold", size: 14)
-        textField.backgroundColor = UIColor(named: "Grey200")
+        textField.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
         textField.layer.cornerRadius = 3
         return textField
     }()
     
     var loginButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 20, y: 422, width: 335, height: 57))
-        button.backgroundColor = UIColor(named: "PrimaryOrange")
+        button.backgroundColor = UIColor(red: 255/255, green: 111/255, blue: 15/255, alpha: 1)
         button.setTitle("로그인하기", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 18)
@@ -63,8 +63,18 @@ class LoginViewController_Delegate: UIViewController {
     }
 
     private func pushToWelcomeVC() {
-        let welcomeViewController = WelcomeViewController()
+        let welcomeViewController = WelcomeViewController_DelegatePattern()
+        
+        welcomeViewController.delegate = self
         welcomeViewController.setLabelText(id: idTextField.text)
+        
         self.navigationController?.pushViewController(welcomeViewController, animated: true)
     }
+}
+
+extension LoginViewController_Delegate: DataBindDelegate {
+    func dataBind(id: String) {
+        passwordTextField.text = id
+    }
+    
 }

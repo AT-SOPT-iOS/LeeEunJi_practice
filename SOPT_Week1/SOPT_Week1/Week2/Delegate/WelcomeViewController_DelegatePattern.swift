@@ -12,6 +12,7 @@ protocol DataBindDelegate: AnyObject {
 }
 
 class WelcomeViewController_DelegatePattern: UIViewController {
+    weak var delegate: DataBindDelegate?
     var id: String? = ""
     
     let puppyImageView: UIImageView = {
@@ -70,6 +71,10 @@ class WelcomeViewController_DelegatePattern: UIViewController {
     }
     
     @objc private func reloginButtonDidTapped() {
+        if let id = id {
+            delegate?.dataBind(id: id)
+        }
+        
         if self.navigationController == nil {
             self.dismiss(animated: true)
         } else {
