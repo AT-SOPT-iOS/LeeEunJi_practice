@@ -10,6 +10,8 @@ import UIKit
 class WelcomeViewController_Closure: UIViewController {
     var id: String? = ""
     
+    var loginDataCompletion: ((String) -> Void)?
+    
     let puppyImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 112, y: 87, width: 150, height: 150))
         imageView.image = UIImage(named: "Icon")
