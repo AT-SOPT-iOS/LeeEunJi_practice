@@ -21,6 +21,7 @@
 		D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */; };
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
 		D8FD75D92DAE840500E9B0D7 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D82DAE840500E9B0D7 /* WelcomeViewController_Closure.swift */; };
+		D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75DD2DAE85F900E9B0D7 /* AutoLayoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
 		D8FD75D82DAE840500E9B0D7 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
+		D8FD75DD2DAE85F900E9B0D7 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +129,17 @@
 			children = (
 				D8FD75CF2DAE83F600E9B0D7 /* Closure */,
 				D8FD75D22DAE83F600E9B0D7 /* Delegate */,
+				D8FD75DE2DAE85F900E9B0D7 /* AutoLayout */,
 			);
 			path = Week2;
+			sourceTree = "<group>";
+		};
+		D8FD75DE2DAE85F900E9B0D7 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD75DD2DAE85F900E9B0D7 /* AutoLayoutViewController.swift */,
+			);
+			path = AutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */,
 				D8FD75D92DAE840500E9B0D7 /* WelcomeViewController_Closure.swift in Sources */,
 				D834E3472DA4F70E006DBC8B /* WelcomeViewController.swift in Sources */,
+				D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
