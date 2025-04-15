@@ -22,6 +22,7 @@
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
 		D8FD75D92DAE840500E9B0D7 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D82DAE840500E9B0D7 /* WelcomeViewController_Closure.swift */; };
 		D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75DD2DAE85F900E9B0D7 /* AutoLayoutViewController.swift */; };
+		D8FD75E32DAE86B000E9B0D7 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75E22DAE86B000E9B0D7 /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
 		D8FD75D82DAE840500E9B0D7 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
 		D8FD75DD2DAE85F900E9B0D7 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		D8FD75E22DAE86B000E9B0D7 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				D8FD75CF2DAE83F600E9B0D7 /* Closure */,
 				D8FD75D22DAE83F600E9B0D7 /* Delegate */,
 				D8FD75DE2DAE85F900E9B0D7 /* AutoLayout */,
+				D8FD75E12DAE86AF00E9B0D7 /* ScrollView */,
 			);
 			path = Week2;
 			sourceTree = "<group>";
@@ -140,6 +143,14 @@
 				D8FD75DD2DAE85F900E9B0D7 /* AutoLayoutViewController.swift */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		D8FD75E12DAE86AF00E9B0D7 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD75E22DAE86B000E9B0D7 /* ScrollViewController.swift */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				D834E3462DA4F70E006DBC8B /* ViewController.swift in Sources */,
 				D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */,
 				D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */,
+				D8FD75E32DAE86B000E9B0D7 /* ScrollViewController.swift in Sources */,
 				D8FD75D92DAE840500E9B0D7 /* WelcomeViewController_Closure.swift in Sources */,
 				D834E3472DA4F70E006DBC8B /* WelcomeViewController.swift in Sources */,
 				D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */,
