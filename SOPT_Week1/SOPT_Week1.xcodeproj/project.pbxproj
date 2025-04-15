@@ -80,11 +80,19 @@
 				D834E33A2DA4F70E006DBC8B /* Assets.xcassets */,
 				D834E33B2DA4F70E006DBC8B /* Info.plist */,
 				D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */,
-				D834E33E2DA4F70E006DBC8B /* LoginViewController.swift */,
-				D834E3412DA4F70E006DBC8B /* WelcomeViewController.swift */,
+				D8FD75C72DAE819500E9B0D7 /* Week1 */,
 				D834E3402DA4F70E006DBC8B /* ViewController.swift */,
 			);
 			path = SOPT_Week1;
+			sourceTree = "<group>";
+		};
+		D8FD75C72DAE819500E9B0D7 /* Week1 */ = {
+			isa = PBXGroup;
+			children = (
+				D834E33E2DA4F70E006DBC8B /* LoginViewController.swift */,
+				D834E3412DA4F70E006DBC8B /* WelcomeViewController.swift */,
+			);
+			path = Week1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
