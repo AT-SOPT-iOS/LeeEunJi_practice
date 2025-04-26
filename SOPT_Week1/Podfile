@@ -7,5 +7,6 @@ target 'SOPT_Week1' do
 
   # Pods for SOPT_Week1
   pod 'SnapKit'
+  pod 'Then'
 
 end
