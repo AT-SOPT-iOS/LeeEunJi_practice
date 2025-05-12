@@ -30,6 +30,7 @@
 		D834E34A2DA4F70E006DBC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */; };
 		D842CACB2DD2937A00F2033C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CAC82DD2937A00F2033C /* InfoViewController.swift */; };
 		D842CACC2DD2937A00F2033C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CAC92DD2937A00F2033C /* LoginViewController.swift */; };
+		D842CACE2DD294F700F2033C /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CACD2DD294F700F2033C /* APIKey.swift */; };
 		D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */; };
 		D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */; };
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
@@ -66,6 +67,7 @@
 		D834E3402DA4F70E006DBC8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D842CAC82DD2937A00F2033C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D842CAC92DD2937A00F2033C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D842CACD2DD294F700F2033C /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Delegate.swift; sourceTree = "<group>"; };
 		D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				D828A98E2DC5EBA400CCE674 /* RegisterService.swift */,
 				D828A9942DC5FBAC00CCE674 /* GetInfoService.swift */,
 				D828A9882DC5EB7700CCE674 /* NetworkError.swift */,
+				D842CACD2DD294F700F2033C /* APIKey.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				D834E3462DA4F70E006DBC8B /* ViewController.swift in Sources */,
 				D828A9872DC5EB3F00CCE674 /* SceneDelegate.swift in Sources */,
 				D828A9852DC5EB3800CCE674 /* AppDelegate.swift in Sources */,
+				D842CACE2DD294F700F2033C /* APIKey.swift in Sources */,
 				D828A98F2DC5EBA400CCE674 /* RegisterService.swift in Sources */,
 				D8086C702DBCC65E00F7CDDD /* ItemCollectionViewCell.swift in Sources */,
 				D8086C692DBCA8C000F7CDDD /* ChatTableViewCell.swift in Sources */,
