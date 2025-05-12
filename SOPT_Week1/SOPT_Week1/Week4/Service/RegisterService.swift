@@ -27,7 +27,7 @@ class RegisterService {
     }
     
     func makeRequest(body: Data?) -> URLRequest {
-        let url = URL(string: "https://api.atsopt-seminar4.site/api/v1/auth/signup")!
+        let url = URL(string: "\(APIKey.registerURL)")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         let header = ["Content-Type": "application/json"]
