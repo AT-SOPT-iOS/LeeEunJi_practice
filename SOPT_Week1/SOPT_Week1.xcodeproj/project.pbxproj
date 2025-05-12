@@ -29,7 +29,7 @@
 		D834E3462DA4F70E006DBC8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834E3402DA4F70E006DBC8B /* ViewController.swift */; };
 		D834E34A2DA4F70E006DBC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D834E33D2DA4F70E006DBC8B /* LaunchScreen.storyboard */; };
 		D842CACB2DD2937A00F2033C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CAC82DD2937A00F2033C /* InfoViewController.swift */; };
-		D842CACC2DD2937A00F2033C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CAC92DD2937A00F2033C /* LoginViewController.swift */; };
+		D842CACC2DD2937A00F2033C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CAC92DD2937A00F2033C /* RegisterViewController.swift */; };
 		D842CACE2DD294F700F2033C /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CACD2DD294F700F2033C /* APIKey.swift */; };
 		D842CB3E2DD295CC00F2033C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB3D2DD295CC00F2033C /* MovieViewController.swift */; };
 		D842CB402DD2976100F2033C /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB3F2DD2976100F2033C /* MovieService.swift */; };
@@ -70,7 +70,7 @@
 		D834E33C2DA4F70E006DBC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D834E3402DA4F70E006DBC8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D842CAC82DD2937A00F2033C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		D842CAC92DD2937A00F2033C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D842CAC92DD2937A00F2033C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D842CACD2DD294F700F2033C /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		D842CB3D2DD295CC00F2033C /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		D842CB3F2DD2976100F2033C /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				D842CAC82DD2937A00F2033C /* InfoViewController.swift */,
-				D842CAC92DD2937A00F2033C /* LoginViewController.swift */,
+				D842CAC92DD2937A00F2033C /* RegisterViewController.swift */,
 				D842CB452DD2999800F2033C /* MovieViewController */,
 			);
 			path = Presentation;
@@ -444,7 +444,7 @@
 				D8FD75D92DAE840500E9B0D7 /* WelcomeViewController_Closure.swift in Sources */,
 				D828A9912DC5FA7B00CCE674 /* NicknameListResponseWrapper.swift in Sources */,
 				D842CACB2DD2937A00F2033C /* InfoViewController.swift in Sources */,
-				D842CACC2DD2937A00F2033C /* LoginViewController.swift in Sources */,
+				D842CACC2DD2937A00F2033C /* RegisterViewController.swift in Sources */,
 				D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

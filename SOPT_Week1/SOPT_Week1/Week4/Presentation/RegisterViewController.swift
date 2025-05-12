@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  SOPT_Week1
 //
 //  Created by 이은지 on 5/3/25.
@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-final class LoginViewController: UIViewController {
+final class RegisterViewController: UIViewController {
 
     private var loginId: String = ""
     private var password: String = ""
