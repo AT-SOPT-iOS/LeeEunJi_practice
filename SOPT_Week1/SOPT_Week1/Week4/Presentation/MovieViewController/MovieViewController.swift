@@ -8,14 +8,13 @@
 import UIKit
 
 final class MovieViewController: UIViewController {
-    
     private let tableView = UITableView()
-    private let viewModel = MovieViewModel()
+    private var movieList: [WeeklyBoxOfficeList] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        fetchData()
+        fetchMovieData()
     }
     
     private func setupTableView() {
@@ -23,18 +22,19 @@ final class MovieViewController: UIViewController {
         tableView.frame = view.bounds
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(MovieTableViewCell.self, forCellReuseIdentifier: "MovieCell")
+        tableView.register(MovieTableViewCell.self, forCellReuseIdentifier: "MovieTableViewCell")
     }
     
-    private func fetchData() {
-        viewModel.loadMovies { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success():
-                    self?.tableView.reloadData()
-                case .failure(let error):
-                    print("Error loading movies: \(error)")
+    private func fetchMovieData() {
+        Task {
+            do {
+                let result = try await MovieService.shared.fetchMovieList(keyword: nil)
+                self.movieList = result
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
                 }
+            } catch {
+                print("영화 데이터 로딩 실패: \(error)")
             }
         }
     }
@@ -42,14 +42,14 @@ final class MovieViewController: UIViewController {
 
 extension MovieViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.movieList.count
+        return movieList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as? MovieTableViewCell else {
             return UITableViewCell()
         }
-        let movie = viewModel.movieList[indexPath.row]
+        let movie = movieList[indexPath.row]
         cell.configure(with: movie)
         return cell
     }

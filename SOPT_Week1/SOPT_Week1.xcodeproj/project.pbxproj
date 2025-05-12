@@ -32,6 +32,9 @@
 		D842CACC2DD2937A00F2033C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CAC92DD2937A00F2033C /* LoginViewController.swift */; };
 		D842CACE2DD294F700F2033C /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CACD2DD294F700F2033C /* APIKey.swift */; };
 		D842CB3E2DD295CC00F2033C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB3D2DD295CC00F2033C /* MovieViewController.swift */; };
+		D842CB402DD2976100F2033C /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB3F2DD2976100F2033C /* MovieService.swift */; };
+		D842CB422DD2983B00F2033C /* MovieResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */; };
+		D842CB442DD2994C00F2033C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB432DD2994C00F2033C /* MovieTableViewCell.swift */; };
 		D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */; };
 		D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */; };
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
@@ -70,6 +73,9 @@
 		D842CAC92DD2937A00F2033C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D842CACD2DD294F700F2033C /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		D842CB3D2DD295CC00F2033C /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D842CB3F2DD2976100F2033C /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseDTO.swift; sourceTree = "<group>"; };
+		D842CB432DD2994C00F2033C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Delegate.swift; sourceTree = "<group>"; };
 		D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
@@ -203,6 +209,7 @@
 				D828A98A2DC5EB8200CCE674 /* RegisterRequestModel.swift */,
 				D828A9902DC5FA7B00CCE674 /* NicknameListResponseWrapper.swift */,
 				D828A98C2DC5EB9000CCE674 /* RegisterResponseWrapper.swift */,
+				D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 				D828A9942DC5FBAC00CCE674 /* GetInfoService.swift */,
 				D828A9882DC5EB7700CCE674 /* NetworkError.swift */,
 				D842CACD2DD294F700F2033C /* APIKey.swift */,
+				D842CB3F2DD2976100F2033C /* MovieService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -223,9 +231,18 @@
 			children = (
 				D842CAC82DD2937A00F2033C /* InfoViewController.swift */,
 				D842CAC92DD2937A00F2033C /* LoginViewController.swift */,
-				D842CB3D2DD295CC00F2033C /* MovieViewController.swift */,
+				D842CB452DD2999800F2033C /* MovieViewController */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D842CB452DD2999800F2033C /* MovieViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D842CB3D2DD295CC00F2033C /* MovieViewController.swift */,
+				D842CB432DD2994C00F2033C /* MovieTableViewCell.swift */,
+			);
+			path = MovieViewController;
 			sourceTree = "<group>";
 		};
 		D8CE23042DC5E30E0069732A /* Week4 */ = {
@@ -402,9 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D828A9892DC5EB7700CCE674 /* NetworkError.swift in Sources */,
+				D842CB422DD2983B00F2033C /* MovieResponseDTO.swift in Sources */,
+				D842CB442DD2994C00F2033C /* MovieTableViewCell.swift in Sources */,
 				D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */,
 				D828A98B2DC5EB8200CCE674 /* RegisterRequestModel.swift in Sources */,
 				D828A98D2DC5EB9000CCE674 /* RegisterResponseWrapper.swift in Sources */,
+				D842CB402DD2976100F2033C /* MovieService.swift in Sources */,
 				D8086C6B2DBCB0CE00F7CDDD /* ChatModel.swift in Sources */,
 				D828A9952DC5FBAC00CCE674 /* GetInfoService.swift in Sources */,
 				D8086C722DBCC6C300F7CDDD /* ItemModel.swift in Sources */,

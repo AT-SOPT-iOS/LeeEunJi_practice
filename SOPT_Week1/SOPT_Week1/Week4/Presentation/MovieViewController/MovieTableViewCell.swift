@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import SnapKit
 
 final class MovieTableViewCell: UITableViewCell {
-
-    private let titleLabel = UILabel()
+    
     private let rankLabel = UILabel()
+    private let titleLabel = UILabel()
     private let openDateLabel = UILabel()
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupLayout()
@@ -24,21 +25,26 @@ final class MovieTableViewCell: UITableViewCell {
 
     private func setupLayout() {
         [rankLabel, titleLabel, openDateLabel].forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)
         }
-
-        NSLayoutConstraint.activate([
-            rankLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            rankLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-
-            titleLabel.leadingAnchor.constraint(equalTo: rankLabel.trailingAnchor, constant: 12),
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
-            
-            openDateLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            openDateLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
-            openDateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12)
-        ])
+        
+        rankLabel.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(16)
+            $0.centerY.equalToSuperview()
+            $0.width.equalTo(30)
+        }
+        
+        titleLabel.snp.makeConstraints {
+            $0.leading.equalTo(rankLabel.snp.trailing).offset(12)
+            $0.top.equalToSuperview().offset(12)
+            $0.trailing.equalToSuperview().offset(-16)
+        }
+        
+        openDateLabel.snp.makeConstraints {
+            $0.leading.equalTo(titleLabel.snp.leading)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(4)
+            $0.bottom.equalToSuperview().offset(-12)
+        }
     }
 
     func configure(with movie: WeeklyBoxOfficeList) {
