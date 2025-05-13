@@ -11,39 +11,29 @@ final class NicknamePatchService {
     static let shared = NicknamePatchService()
     private init() {}
     
-    func makeRequest(keyword: String?) -> URLRequest? {
-        var urlString = "\(APIKey.nicknamePatchURL)"
-
-            if let keyword = keyword, !keyword.isEmpty,
-               let encoded = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-                urlString += "?keyword=\(encoded)"
-            }
-
-            guard let url = URL(string: urlString) else { return nil }
-
-            var request = URLRequest(url: url)
-            request.httpMethod = "PATCH"
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type") // optional
-            return request
-        }
-    
-    func fetchNicknamePatchList(keyword: String?) async throws -> [String] {
-        guard let request = makeRequest(keyword: keyword) else {
+    func fetchNickname(userId: Int, nickname: String) async throws -> NicknamePatchResponse {
+        guard let url = URL(string: APIKey.nicknamePatchURL) else {
             throw NetworkError.requestEncodingError
         }
-        
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "PATCH"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("\(userId)", forHTTPHeaderField: "userId")
+
+        let body = NicknameRequestModel(nickname: nickname)
+        request.httpBody = try JSONEncoder().encode(body)
+
         let (data, response) = try await URLSession.shared.data(for: request)
-        
+
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
             throw NetworkError.responseError
         }
-        
+
         do {
-            let decoded = try JSONDecoder().decode(NicknameListResponseWrapper.self, from: data)
-            return decoded.data.nicknameList
+            return try JSONDecoder().decode(NicknamePatchResponse.self, from: data)
         } catch {
-            print("디코딩 실패 ", error)
             throw NetworkError.responseDecodingError
         }
     }

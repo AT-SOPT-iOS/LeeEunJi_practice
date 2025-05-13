@@ -80,7 +80,6 @@ final class LoginViewController: UIViewController {
         }
     }
     
-    
     private func showAlert(message: String) {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
