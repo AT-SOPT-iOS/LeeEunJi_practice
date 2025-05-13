@@ -38,6 +38,7 @@
 		D842CB472DD2E17900F2033C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB462DD2E17900F2033C /* LoginViewController.swift */; };
 		D842CB492DD2E76500F2033C /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB482DD2E76500F2033C /* NicknameViewController.swift */; };
 		D842CB4B2DD2E7EC00F2033C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4A2DD2E7EB00F2033C /* LoginRequest.swift */; };
+		D842CB4D2DD2E8BE00F2033C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */; };
 		D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */; };
 		D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */; };
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
@@ -82,6 +83,7 @@
 		D842CB462DD2E17900F2033C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D842CB482DD2E76500F2033C /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		D842CB4A2DD2E7EB00F2033C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Delegate.swift; sourceTree = "<group>"; };
 		D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				D828A98C2DC5EB9000CCE674 /* RegisterResponseWrapper.swift */,
 				D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */,
 				D842CB4A2DD2E7EB00F2033C /* LoginRequest.swift */,
+				D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				D8086C672DBCA75300F7CDDD /* ChatViewController.swift in Sources */,
 				D8086C6E2DBCC36200F7CDDD /* ItemCollectionViewController.swift in Sources */,
 				D842CB3E2DD295CC00F2033C /* MovieViewController.swift in Sources */,
+				D842CB4D2DD2E8BE00F2033C /* LoginResponse.swift in Sources */,
 				D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */,
 				D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */,
 				D8FD75E32DAE86B000E9B0D7 /* ScrollViewController.swift in Sources */,
