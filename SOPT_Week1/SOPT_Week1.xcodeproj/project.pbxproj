@@ -37,8 +37,9 @@
 		D842CB442DD2994C00F2033C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB432DD2994C00F2033C /* MovieTableViewCell.swift */; };
 		D842CB472DD2E17900F2033C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB462DD2E17900F2033C /* LoginViewController.swift */; };
 		D842CB492DD2E76500F2033C /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB482DD2E76500F2033C /* NicknameViewController.swift */; };
-		D842CB4B2DD2E7EC00F2033C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4A2DD2E7EB00F2033C /* LoginRequest.swift */; };
 		D842CB4D2DD2E8BE00F2033C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */; };
+		D842CB4F2DD2E90A00F2033C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4E2DD2E90A00F2033C /* LoginService.swift */; };
+		D842CB512DD2EB0300F2033C /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */; };
 		D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */; };
 		D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */; };
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
@@ -82,8 +83,9 @@
 		D842CB432DD2994C00F2033C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		D842CB462DD2E17900F2033C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D842CB482DD2E76500F2033C /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
-		D842CB4A2DD2E7EB00F2033C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		D842CB4E2DD2E90A00F2033C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
 		D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Delegate.swift; sourceTree = "<group>"; };
 		D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
@@ -218,8 +220,8 @@
 				D828A9902DC5FA7B00CCE674 /* NicknameListResponseWrapper.swift */,
 				D828A98C2DC5EB9000CCE674 /* RegisterResponseWrapper.swift */,
 				D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */,
-				D842CB4A2DD2E7EB00F2033C /* LoginRequest.swift */,
 				D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */,
+				D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,6 +234,7 @@
 				D828A9882DC5EB7700CCE674 /* NetworkError.swift */,
 				D842CACD2DD294F700F2033C /* APIKey.swift */,
 				D842CB3F2DD2976100F2033C /* MovieService.swift */,
+				D842CB4E2DD2E90A00F2033C /* LoginService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				D842CACE2DD294F700F2033C /* APIKey.swift in Sources */,
 				D828A98F2DC5EBA400CCE674 /* RegisterService.swift in Sources */,
 				D8086C702DBCC65E00F7CDDD /* ItemCollectionViewCell.swift in Sources */,
+				D842CB512DD2EB0300F2033C /* LoginRequestModel.swift in Sources */,
 				D8086C692DBCA8C000F7CDDD /* ChatTableViewCell.swift in Sources */,
 				D8086C672DBCA75300F7CDDD /* ChatViewController.swift in Sources */,
 				D8086C6E2DBCC36200F7CDDD /* ItemCollectionViewController.swift in Sources */,
@@ -458,10 +462,10 @@
 				D8FD75E32DAE86B000E9B0D7 /* ScrollViewController.swift in Sources */,
 				D8FD75D92DAE840500E9B0D7 /* WelcomeViewController_Closure.swift in Sources */,
 				D828A9912DC5FA7B00CCE674 /* NicknameListResponseWrapper.swift in Sources */,
+				D842CB4F2DD2E90A00F2033C /* LoginService.swift in Sources */,
 				D842CACB2DD2937A00F2033C /* InfoViewController.swift in Sources */,
 				D842CACC2DD2937A00F2033C /* RegisterViewController.swift in Sources */,
 				D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */,
-				D842CB4B2DD2E7EC00F2033C /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
