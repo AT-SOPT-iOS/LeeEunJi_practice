@@ -40,6 +40,7 @@
 		D842CB4D2DD2E8BE00F2033C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */; };
 		D842CB4F2DD2E90A00F2033C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB4E2DD2E90A00F2033C /* LoginService.swift */; };
 		D842CB512DD2EB0300F2033C /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */; };
+		D842CB542DD2ECFC00F2033C /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842CB532DD2ECFC00F2033C /* UITextField+.swift */; };
 		D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */; };
 		D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */; };
 		D8FD75D72DAE83FF00E9B0D7 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */; };
@@ -86,6 +87,7 @@
 		D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		D842CB4E2DD2E90A00F2033C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		D842CB532DD2ECFC00F2033C /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		D8FD75D02DAE83F600E9B0D7 /* LoginViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Delegate.swift; sourceTree = "<group>"; };
 		D8FD75D12DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		D8FD75D62DAE83FF00E9B0D7 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		D834E3422DA4F70E006DBC8B /* SOPT_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				D842CB522DD2ECEF00F2033C /* Extension */,
 				D8FD75D32DAE83F600E9B0D7 /* Week2 */,
 				D8086C652DBCA66A00F7CDDD /* Week3 */,
 				D8CE23042DC5E30E0069732A /* Week4 */,
@@ -258,6 +261,14 @@
 				D842CB432DD2994C00F2033C /* MovieTableViewCell.swift */,
 			);
 			path = MovieViewController;
+			sourceTree = "<group>";
+		};
+		D842CB522DD2ECEF00F2033C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D842CB532DD2ECFC00F2033C /* UITextField+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D8CE23042DC5E30E0069732A /* Week4 */ = {
@@ -456,6 +467,7 @@
 				D8086C672DBCA75300F7CDDD /* ChatViewController.swift in Sources */,
 				D8086C6E2DBCC36200F7CDDD /* ItemCollectionViewController.swift in Sources */,
 				D842CB3E2DD295CC00F2033C /* MovieViewController.swift in Sources */,
+				D842CB542DD2ECFC00F2033C /* UITextField+.swift in Sources */,
 				D842CB4D2DD2E8BE00F2033C /* LoginResponse.swift in Sources */,
 				D8FD75D42DAE83F600E9B0D7 /* LoginViewController_Delegate.swift in Sources */,
 				D8FD75D52DAE83F600E9B0D7 /* WelcomeViewController_DelegatePattern.swift in Sources */,

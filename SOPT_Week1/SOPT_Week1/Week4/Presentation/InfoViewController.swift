@@ -87,12 +87,3 @@ final class InfoViewController: UIViewController {
         $0.font = .systemFont(ofSize: 16)
     }
 }
-
-// MARK: - Padding Extension
-private extension UITextField {
-    func setLeftPadding(_ amount: CGFloat) {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.height))
-        self.leftView = paddingView
-        self.leftViewMode = .always
-    }
-}
