@@ -11,10 +11,10 @@ final class LoginService {
     static let shared = LoginService()
     private init() {}
     
-    func makeRequestBody(loginID: String,
+    func makeRequestBody(loginId: String,
                          password: String) -> Data? {
         do {
-            let data = LoginRequestModel(loginID: loginID, password: password)
+            let data = LoginRequestModel(loginId: loginId, password: password)
             
             let jsonEncoder = JSONEncoder()
             let requestBody = try jsonEncoder.encode(data)
@@ -40,33 +40,33 @@ final class LoginService {
         return request
     }
     
-    func PostRegisterDate(loginID: String,
-                          password: String) async throws -> LoginRequestModel? {
-        guard let body = makeRequestBody(loginID: loginID,
+    func fetchLogin(loginId: String,
+                    password: String) async throws -> LoginResponse {
+        guard let body = makeRequestBody(loginId: loginId,
                                          password: password) else {
             throw NetworkError.requestEncodingError
         }
-        
+
         let request = makeRequest(body: body)
         let (data, response) = try await URLSession.shared.data(for: request)
-        
-        
+
         guard let httpResponse = response as? HTTPURLResponse else {
             throw NetworkError.responseError
         }
-        
+
         guard (200...299).contains(httpResponse.statusCode) else {
             throw configureHTTPError(errorCode: httpResponse.statusCode)
         }
-        
+
         do {
             let decoded = try JSONDecoder().decode(LoginResponse.self, from: data)
-            return decoded.data
+            return decoded
         } catch {
             print("디코딩 실패: ", error)
             throw NetworkError.responseDecodingError
         }
     }
+
     
     private func configureHTTPError(errorCode: Int) -> Error {
         return NetworkError(rawValue: errorCode) ?? NetworkError.unknownError

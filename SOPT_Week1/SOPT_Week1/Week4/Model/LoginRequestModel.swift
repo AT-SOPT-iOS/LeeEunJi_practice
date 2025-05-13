@@ -8,10 +8,10 @@
 import Foundation
 
 struct LoginRequestModel: Codable {
-    let loginID, password: String
+    let loginId, password: String
 
     enum CodingKeys: String, CodingKey {
-        case loginID = "loginId"
+        case loginId = "loginId"
         case password
     }
 }

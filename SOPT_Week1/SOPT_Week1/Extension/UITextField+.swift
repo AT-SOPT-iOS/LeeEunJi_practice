@@ -13,4 +13,11 @@ extension UITextField {
         self.leftView = paddingView
         self.leftViewMode = .always
     }
+    
+    func configureDefaultTextField() {
+        self.autocorrectionType = .no
+        self.spellCheckingType = .no
+        self.autocapitalizationType = .none
+        self.clearsOnBeginEditing = false
+    }
 }
