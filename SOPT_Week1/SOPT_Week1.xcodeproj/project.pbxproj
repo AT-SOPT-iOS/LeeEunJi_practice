@@ -18,6 +18,9 @@
 		D817EC782DC26B160027FF87 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D817EC722DC26B160027FF87 /* Pretendard-ExtraBold.otf */; };
 		D817EC792DC26B160027FF87 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D817EC732DC26B160027FF87 /* Pretendard-SemiBold.otf */; };
 		D817EC7A2DC26B160027FF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D817EC752DC26B160027FF87 /* Assets.xcassets */; };
+		D81F9D5B2DD3931F00900B40 /* NicknameRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F9D5A2DD3931F00900B40 /* NicknameRequestModel.swift */; };
+		D81F9D5D2DD393E000900B40 /* NicknamePatchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F9D5C2DD393E000900B40 /* NicknamePatchResponse.swift */; };
+		D81F9D5F2DD3942100900B40 /* NicknamePatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F9D5E2DD3942100900B40 /* NicknamePatchService.swift */; };
 		D828A9852DC5EB3800CCE674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828A9842DC5EB3800CCE674 /* AppDelegate.swift */; };
 		D828A9872DC5EB3F00CCE674 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828A9862DC5EB3F00CCE674 /* SceneDelegate.swift */; };
 		D828A9892DC5EB7700CCE674 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828A9882DC5EB7700CCE674 /* NetworkError.swift */; };
@@ -63,6 +66,9 @@
 		D817EC722DC26B160027FF87 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		D817EC732DC26B160027FF87 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		D817EC752DC26B160027FF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D81F9D5A2DD3931F00900B40 /* NicknameRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameRequestModel.swift; sourceTree = "<group>"; };
+		D81F9D5C2DD393E000900B40 /* NicknamePatchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknamePatchResponse.swift; sourceTree = "<group>"; };
+		D81F9D5E2DD3942100900B40 /* NicknamePatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknamePatchService.swift; sourceTree = "<group>"; };
 		D828A9842DC5EB3800CCE674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D828A9862DC5EB3F00CCE674 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D828A9882DC5EB7700CCE674 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -225,6 +231,8 @@
 				D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */,
 				D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */,
 				D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */,
+				D81F9D5A2DD3931F00900B40 /* NicknameRequestModel.swift */,
+				D81F9D5C2DD393E000900B40 /* NicknamePatchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 				D842CACD2DD294F700F2033C /* APIKey.swift */,
 				D842CB3F2DD2976100F2033C /* MovieService.swift */,
 				D842CB4E2DD2E90A00F2033C /* LoginService.swift */,
+				D81F9D5E2DD3942100900B40 /* NicknamePatchService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -465,6 +474,7 @@
 				D842CB512DD2EB0300F2033C /* LoginRequestModel.swift in Sources */,
 				D8086C692DBCA8C000F7CDDD /* ChatTableViewCell.swift in Sources */,
 				D8086C672DBCA75300F7CDDD /* ChatViewController.swift in Sources */,
+				D81F9D5B2DD3931F00900B40 /* NicknameRequestModel.swift in Sources */,
 				D8086C6E2DBCC36200F7CDDD /* ItemCollectionViewController.swift in Sources */,
 				D842CB3E2DD295CC00F2033C /* MovieViewController.swift in Sources */,
 				D842CB542DD2ECFC00F2033C /* UITextField+.swift in Sources */,
@@ -476,8 +486,10 @@
 				D828A9912DC5FA7B00CCE674 /* NicknameListResponseWrapper.swift in Sources */,
 				D842CB4F2DD2E90A00F2033C /* LoginService.swift in Sources */,
 				D842CACB2DD2937A00F2033C /* InfoViewController.swift in Sources */,
+				D81F9D5F2DD3942100900B40 /* NicknamePatchService.swift in Sources */,
 				D842CACC2DD2937A00F2033C /* RegisterViewController.swift in Sources */,
 				D8FD75DF2DAE85F900E9B0D7 /* AutoLayoutViewController.swift in Sources */,
+				D81F9D5D2DD393E000900B40 /* NicknamePatchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

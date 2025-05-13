@@ -13,5 +13,6 @@ struct APIKey {
     static let infoURL = "http://api.atsopt-seminar4.site/api/v1/users"
     static let movieURL = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key="
     static let loginURL = "http://api.atsopt-seminar4.site/api/v1/auth/signin"
+    static let nicknamePatchURL = "http://api.atsopt-seminar4.site/api/v1/users"
 }
 
