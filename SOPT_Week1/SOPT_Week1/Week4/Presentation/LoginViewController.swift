@@ -60,17 +60,32 @@ final class LoginViewController: UIViewController {
     @objc private func loginButtonTapped() {
         guard let loginId = idTextField.text, !loginId.isEmpty,
               let password = passwordTextField.text, !password.isEmpty else {
-            self.infoLabel.text = "아이디와 비밀번호를 모두 입력하세요."
+            showAlert(message: "아이디와 비밀번호를 모두 입력하세요.")
             return
         }
 
         Task {
             do {
                 let response = try await LoginService.shared.fetchLogin(loginId: loginId, password: password)
-                self.infoLabel.text = response.message
+                
+                if response.success {
+                    let userId = response.data?.userId ?? -1
+                    showAlert(message: "로그인 성공! 유저 ID: \(userId)")
+                } else {
+                    showAlert(message: response.message)
+                }
             } catch {
-                self.infoLabel.text = "로그인 실패: \(error.localizedDescription)"
+                showAlert(message: "로그인 요청 중 오류가 발생했습니다: \(error.localizedDescription)")
             }
+        }
+    }
+    
+    
+    private func showAlert(message: String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .default))
+            self.present(alert, animated: true)
         }
     }
     

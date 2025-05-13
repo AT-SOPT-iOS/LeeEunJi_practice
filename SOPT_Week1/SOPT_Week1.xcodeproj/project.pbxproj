@@ -188,6 +188,15 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		D81F9D602DD399F400900B40 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */,
+				D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		D83470462DA4EA8800F5A4D9 = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +238,7 @@
 				D828A9902DC5FA7B00CCE674 /* NicknameListResponseWrapper.swift */,
 				D828A98C2DC5EB9000CCE674 /* RegisterResponseWrapper.swift */,
 				D842CB412DD2983B00F2033C /* MovieResponseDTO.swift */,
-				D842CB4C2DD2E8BE00F2033C /* LoginResponse.swift */,
-				D842CB502DD2EB0300F2033C /* LoginRequestModel.swift */,
+				D81F9D602DD399F400900B40 /* Login */,
 				D81F9D5A2DD3931F00900B40 /* NicknameRequestModel.swift */,
 				D81F9D5C2DD393E000900B40 /* NicknamePatchResponse.swift */,
 			);

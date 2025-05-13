@@ -10,40 +10,24 @@ import UIKit
 final class LoginService {
     static let shared = LoginService()
     private init() {}
-    
-    func makeRequestBody(loginId: String,
-                         password: String) -> Data? {
-        do {
-            let data = LoginRequestModel(loginId: loginId, password: password)
-            
-            let jsonEncoder = JSONEncoder()
-            let requestBody = try jsonEncoder.encode(data)
-            return requestBody
-        } catch {
-            print("\(error)")
-            return nil
-        }
+
+    func makeRequestBody(loginId: String, password: String) -> Data? {
+        let data = LoginRequestModel(loginId: loginId, password: password)
+        return try? JSONEncoder().encode(data)
     }
     
     func makeRequest(body: Data?) -> URLRequest {
-        let url = URL(string: "\(APIKey.loginURL)")!
+        let url = URL(string: APIKey.loginURL)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        let header = ["Content-Type": "application/json"]
-        header.forEach {
-            request.addValue($0.value, forHTTPHeaderField: $0.key)
-        }
-        if let body = body {
-            request.httpBody = body
-        }
-        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = body
         return request
     }
     
-    func fetchLogin(loginId: String,
-                    password: String) async throws -> LoginResponse {
-        guard let body = makeRequestBody(loginId: loginId,
-                                         password: password) else {
+
+    func fetchLogin(loginId: String, password: String) async throws -> LoginResponse {
+        guard let body = makeRequestBody(loginId: loginId, password: password) else {
             throw NetworkError.requestEncodingError
         }
 
@@ -58,11 +42,11 @@ final class LoginService {
             throw configureHTTPError(errorCode: httpResponse.statusCode)
         }
 
+
         do {
             let decoded = try JSONDecoder().decode(LoginResponse.self, from: data)
             return decoded
         } catch {
-            print("디코딩 실패: ", error)
             throw NetworkError.responseDecodingError
         }
     }
